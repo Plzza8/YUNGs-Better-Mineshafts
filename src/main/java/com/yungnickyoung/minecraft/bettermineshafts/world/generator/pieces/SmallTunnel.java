@@ -7,7 +7,6 @@ import com.yungnickyoung.minecraft.bettermineshafts.world.generator.BetterMinesh
 import com.yungnickyoung.minecraft.yungsapi.world.BoundingBoxHelper;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.PoweredRailBlock;
 import net.minecraft.block.enums.WallShape;
 import net.minecraft.entity.vehicle.ChestMinecartEntity;
 import net.minecraft.entity.vehicle.TntMinecartEntity;
