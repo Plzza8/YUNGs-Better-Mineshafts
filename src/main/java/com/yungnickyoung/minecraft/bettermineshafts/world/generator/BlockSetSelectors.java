@@ -27,86 +27,48 @@ public class BlockSetSelectors {
     public static Map<BetterMineshaftStructure.Type, BlockSetSelector> MAIN_SELECTOR = Stream.of (new Object[][] {
         {
             BetterMineshaftStructure.Type.NORMAL,
-            new BlockSetSelector(Blocks.OAK_PLANKS.getDefaultState())
-                .addBlock(Blocks.COBBLESTONE.getDefaultState(), 0.1f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), 0.1f)
-                .addBlock(Blocks.MOSSY_STONE_BRICKS.getDefaultState(), 0.1f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 0.1f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
                 .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.MESA,
-            new BlockSetSelector(Blocks.DARK_OAK_PLANKS.getDefaultState())
-                .addBlock(Blocks.BROWN_TERRACOTTA.getDefaultState(), 0.1f)
-                .addBlock(Blocks.ORANGE_TERRACOTTA.getDefaultState(), 0.1f)
-                .addBlock(Blocks.YELLOW_TERRACOTTA.getDefaultState(), 0.1f)
-                .addBlock(Blocks.WHITE_TERRACOTTA.getDefaultState(), 0.1f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
                 .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.JUNGLE,
-            new BlockSetSelector(Blocks.JUNGLE_PLANKS.getDefaultState())
-                .addBlock(Blocks.MOSSY_COBBLESTONE.getDefaultState(), 0.1f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), 0.05f)
-                .addBlock(Blocks.MOSSY_STONE_BRICKS.getDefaultState(), 0.2f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 0.05f)
-                .addBlock(Blocks.CHISELED_STONE_BRICKS.getDefaultState(), 0.05f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
                 .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.SNOW,
-            new BlockSetSelector(Blocks.SPRUCE_PLANKS.getDefaultState())
-                .addBlock(Blocks.SNOW_BLOCK.getDefaultState(), .25f)
-                .addBlock(Blocks.PACKED_ICE.getDefaultState(), .1f)
-                .addBlock(Blocks.BLUE_ICE.getDefaultState(), .1f)
-                .addBlock(Blocks.COBBLESTONE.getDefaultState(), 0.05f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 0.1f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
                 .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.ICE,
-            new BlockSetSelector(Blocks.PACKED_ICE.getDefaultState())
-                .addBlock(Blocks.BLUE_ICE.getDefaultState(), .4f)
-                .addBlock(Blocks.SNOW_BLOCK.getDefaultState(), 0.1f)
-                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.1f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.DESERT,
-            new BlockSetSelector(Blocks.SANDSTONE.getDefaultState())
-                .addBlock(Blocks.SAND.getDefaultState(), 0.3f)
-                .addBlock(Blocks.CHISELED_SANDSTONE.getDefaultState(), 0.1f)
-                .addBlock(Blocks.CUT_SANDSTONE.getDefaultState(), 0.1f)
-                .addBlock(Blocks.SMOOTH_SANDSTONE.getDefaultState(), 0.1f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), 0.05f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 0.05f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
                 .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.RED_DESERT,
-            new BlockSetSelector(Blocks.RED_SANDSTONE.getDefaultState())
-                .addBlock(Blocks.RED_SAND.getDefaultState(), 0.3f)
-                .addBlock(Blocks.CHISELED_RED_SANDSTONE.getDefaultState(), 0.1f)
-                .addBlock(Blocks.CUT_RED_SANDSTONE.getDefaultState(), 0.1f)
-                .addBlock(Blocks.SMOOTH_RED_SANDSTONE.getDefaultState(), 0.1f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), 0.05f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 0.05f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
                 .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.SAVANNA,
-            new BlockSetSelector(Blocks.ACACIA_PLANKS.getDefaultState())
-                .addBlock(Blocks.COBBLESTONE.getDefaultState(), 0.1f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), 0.1f)
-                .addBlock(Blocks.MOSSY_STONE_BRICKS.getDefaultState(), 0.1f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 0.1f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
                 .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.MUSHROOM,
-            new BlockSetSelector(Blocks.RED_MUSHROOM_BLOCK.getDefaultState())
-                .addBlock(Blocks.MUSHROOM_STEM.getDefaultState(), .33333f)
-                .addBlock(Blocks.BROWN_MUSHROOM_BLOCK.getDefaultState(), .33333f)
-                .addBlock(Blocks.RED_MUSHROOM_BLOCK.getDefaultState(), .33333f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState()}
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         }
     }).collect(Collectors.toMap(data -> (BetterMineshaftStructure.Type) data[0], data -> (BlockSetSelector) data[1]));
 
@@ -116,78 +78,48 @@ public class BlockSetSelectors {
     public static Map<BetterMineshaftStructure.Type, BlockSetSelector> FLOOR_SELECTOR = Stream.of (new Object[][] {
         {
             BetterMineshaftStructure.Type.NORMAL,
-            new BlockSetSelector(Blocks.OAK_PLANKS.getDefaultState())
-                .addBlock(Blocks.COBBLESTONE.getDefaultState(), 0.1f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), 0.1f)
-                .addBlock(Blocks.MOSSY_STONE_BRICKS.getDefaultState(), 0.1f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 0.1f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.MESA,
-            new BlockSetSelector(Blocks.DARK_OAK_PLANKS.getDefaultState())
-                .addBlock(Blocks.BROWN_TERRACOTTA.getDefaultState(), 0.05f)
-                .addBlock(Blocks.ORANGE_TERRACOTTA.getDefaultState(), 0.05f)
-                .addBlock(Blocks.YELLOW_TERRACOTTA.getDefaultState(), 0.05f)
-                .addBlock(Blocks.WHITE_TERRACOTTA.getDefaultState(), 0.05f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), 0.1f)
-                .addBlock(Blocks.MOSSY_STONE_BRICKS.getDefaultState(), 0.1f)
-                .addBlock(Blocks.CHISELED_STONE_BRICKS.getDefaultState(), 0.1f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.JUNGLE,
-            new BlockSetSelector(Blocks.JUNGLE_PLANKS.getDefaultState())
-                .addBlock(Blocks.MOSSY_COBBLESTONE.getDefaultState(), .1f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), .05f)
-                .addBlock(Blocks.MOSSY_STONE_BRICKS.getDefaultState(), .2f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), .05f)
-                .addBlock(Blocks.CHISELED_STONE_BRICKS.getDefaultState(), .05f),
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.SNOW,
-            new BlockSetSelector(Blocks.SPRUCE_PLANKS.getDefaultState())
-                .addBlock(Blocks.SNOW_BLOCK.getDefaultState(), .25f)
-                .addBlock(Blocks.PACKED_ICE.getDefaultState(), .2f)
-                .addBlock(Blocks.COBBLESTONE.getDefaultState(), .05f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), .1f),
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.ICE,
-            new BlockSetSelector(Blocks.PACKED_ICE.getDefaultState())
-                .addBlock(Blocks.PACKED_ICE.getDefaultState(), .45f)
-                .addBlock(Blocks.BLUE_ICE.getDefaultState(), .45f)
-                .addBlock(Blocks.SNOW_BLOCK.getDefaultState(), .1f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.DESERT,
-            new BlockSetSelector(Blocks.SANDSTONE.getDefaultState())
-                .addBlock(Blocks.SAND.getDefaultState(), .3f)
-                .addBlock(Blocks.SMOOTH_SANDSTONE.getDefaultState(), .1f)
-                .addBlock(Blocks.CHISELED_SANDSTONE.getDefaultState(), .1f)
-                .addBlock(Blocks.CUT_SANDSTONE.getDefaultState(), .1f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), .05f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), .05f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.RED_DESERT,
-            new BlockSetSelector(Blocks.RED_SANDSTONE.getDefaultState())
-                .addBlock(Blocks.RED_SAND.getDefaultState(), .3f)
-                .addBlock(Blocks.SMOOTH_RED_SANDSTONE.getDefaultState(), .1f)
-                .addBlock(Blocks.CHISELED_RED_SANDSTONE.getDefaultState(), .1f)
-                .addBlock(Blocks.CUT_RED_SANDSTONE.getDefaultState(), .1f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), .05f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), .05f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.SAVANNA,
-            new BlockSetSelector(Blocks.ACACIA_PLANKS.getDefaultState())
-                .addBlock(Blocks.COBBLESTONE.getDefaultState(), 0.1f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), 0.1f)
-                .addBlock(Blocks.MOSSY_STONE_BRICKS.getDefaultState(), 0.1f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 0.1f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.MUSHROOM,
-            BlockSetSelector.from(Blocks.MYCELIUM.getDefaultState())
+            new BlockSetSelector(Blocks.STONE.getDefaultState()}
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         }
     }).collect(Collectors.toMap(data -> (BetterMineshaftStructure.Type) data[0], data -> (BlockSetSelector) data[1]));
 
@@ -197,69 +129,49 @@ public class BlockSetSelectors {
     public static Map<BetterMineshaftStructure.Type, BlockSetSelector> BRICK_SELECTOR = Stream.of (new Object[][] {
         {
             BetterMineshaftStructure.Type.NORMAL,
-            new BlockSetSelector(Blocks.OAK_PLANKS.getDefaultState())
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), 0.33333f)
-                .addBlock(Blocks.MOSSY_STONE_BRICKS.getDefaultState(), 0.33333f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 0.33333f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.MESA,
-            new BlockSetSelector(Blocks.DARK_OAK_PLANKS.getDefaultState())
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), 0.33333f)
-                .addBlock(Blocks.MOSSY_STONE_BRICKS.getDefaultState(), 0.33333f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 0.33333f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.JUNGLE,
-            new BlockSetSelector(Blocks.JUNGLE_PLANKS.getDefaultState())
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), .25f)
-                .addBlock(Blocks.MOSSY_STONE_BRICKS.getDefaultState(), .25f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), .25f)
-                .addBlock(Blocks.CHISELED_STONE_BRICKS.getDefaultState(), .25f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.SNOW,
-            new BlockSetSelector(Blocks.SPRUCE_PLANKS.getDefaultState())
-                .addBlock(Blocks.SNOW_BLOCK.getDefaultState(), .5f)
-                .addBlock(Blocks.PACKED_ICE.getDefaultState(), .25f)
-                .addBlock(Blocks.BLUE_ICE.getDefaultState(), .25f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.ICE,
-            new BlockSetSelector(Blocks.PACKED_ICE.getDefaultState())
-                .addBlock(Blocks.PACKED_ICE.getDefaultState(), .45f)
-                .addBlock(Blocks.BLUE_ICE.getDefaultState(), .45f)
-                .addBlock(Blocks.SNOW_BLOCK.getDefaultState(), .1f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.DESERT,
-            new BlockSetSelector(Blocks.SANDSTONE.getDefaultState())
-                .addBlock(Blocks.SMOOTH_SANDSTONE.getDefaultState(), .15f)
-                .addBlock(Blocks.CUT_SANDSTONE.getDefaultState(), .15f)
-                .addBlock(Blocks.CHISELED_SANDSTONE.getDefaultState(), .1f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), .1f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.RED_DESERT,
-            new BlockSetSelector(Blocks.RED_SANDSTONE.getDefaultState())
-                .addBlock(Blocks.SMOOTH_RED_SANDSTONE.getDefaultState(), .15f)
-                .addBlock(Blocks.CUT_RED_SANDSTONE.getDefaultState(), .15f)
-                .addBlock(Blocks.CHISELED_RED_SANDSTONE.getDefaultState(), .1f)
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), .1f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.SAVANNA,
-            new BlockSetSelector(Blocks.ACACIA_PLANKS.getDefaultState())
-                .addBlock(Blocks.STONE_BRICKS.getDefaultState(), 0.33333f)
-                .addBlock(Blocks.MOSSY_STONE_BRICKS.getDefaultState(), 0.33333f)
-                .addBlock(Blocks.CRACKED_STONE_BRICKS.getDefaultState(), 0.33333f)
+            new BlockSetSelector(Blocks.STONE.getDefaultState())
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
         },
         {
             BetterMineshaftStructure.Type.MUSHROOM,
-            new BlockSetSelector(Blocks.RED_MUSHROOM_BLOCK.getDefaultState())
-                .addBlock(Blocks.MUSHROOM_STEM.getDefaultState(), .33333f)
-                .addBlock(Blocks.BROWN_MUSHROOM_BLOCK.getDefaultState(), .33333f)
-                .addBlock(Blocks.RED_MUSHROOM_BLOCK.getDefaultState(), .33333f)        }
+            new BlockSetSelector(Blocks.STONE.getDefaultState()}
+                .addBlock(Blocks.CAVE_AIR.getDefaultState(), 0.2f)
+        }       
     }).collect(Collectors.toMap(data -> (BetterMineshaftStructure.Type) data[0], data -> (BlockSetSelector) data[1]));
 
     /**
@@ -268,47 +180,46 @@ public class BlockSetSelectors {
     public static Map<BetterMineshaftStructure.Type, BlockSetSelector> LEG_SELECTOR = Stream.of (new Object[][] {
         {
             BetterMineshaftStructure.Type.NORMAL,
-            BlockSetSelector.from(Blocks.STRIPPED_OAK_LOG.getDefaultState().with(PillarBlock.AXIS, Direction.Axis.Y))
+            BlockSetSelector.from(Blocks.OAK_PLANKS.getDefaultState().with(PillarBlock.AXIS, Direction.Axis.Y))
         },
         {
             BetterMineshaftStructure.Type.MESA,
-            BlockSetSelector.from(Blocks.STRIPPED_DARK_OAK_LOG.getDefaultState().with(PillarBlock.AXIS, Direction.Axis.Y))
+            BlockSetSelector.from(Blocks.DARK_OAK_PLANKS.getDefaultState().with(PillarBlock.AXIS, Direction.Axis.Y))
         },
         {
             BetterMineshaftStructure.Type.JUNGLE,
-            BlockSetSelector.from(Blocks.STRIPPED_JUNGLE_LOG.getDefaultState().with(PillarBlock.AXIS, Direction.Axis.Y))
+            BlockSetSelector.from(Blocks.JUNGLE_PLANKS.getDefaultState().with(PillarBlock.AXIS, Direction.Axis.Y))
         },
         {
             BetterMineshaftStructure.Type.SNOW,
-            BlockSetSelector.from(Blocks.STRIPPED_SPRUCE_LOG.getDefaultState().with(PillarBlock.AXIS, Direction.Axis.Y))
+            BlockSetSelector.from(Blocks.SPRUCE_PLANKS.getDefaultState().with(PillarBlock.AXIS, Direction.Axis.Y))
         },
         {
             BetterMineshaftStructure.Type.ICE,
-            new BlockSetSelector(Blocks.PACKED_ICE.getDefaultState())
-                .addBlock(Blocks.BLUE_ICE.getDefaultState(), .5f)
+            new BlockSetSelector(Blocks.SPRUCE_PLANKS.getDefaultState())
+                .addBlock(Blocks.SPRUCE_PLANKS.getDefaultState(), .5f)
         },
         {
             BetterMineshaftStructure.Type.DESERT,
-            new BlockSetSelector(Blocks.SANDSTONE.getDefaultState())
-                .addBlock(Blocks.SMOOTH_SANDSTONE.getDefaultState(), .15f)
-                .addBlock(Blocks.CUT_SANDSTONE.getDefaultState(), .15f)
-                .addBlock(Blocks.CHISELED_SANDSTONE.getDefaultState(), .1f)
+            new BlockSetSelector(Blocks.ACACIA_PLANKS.getDefaultState())
+                .addBlock(Blocks.ACACIA_PLANKS.getDefaultState(), .15f)
+                .addBlock(Blocks.ACACIA_PLANKS.getDefaultState(), .15f)
+                .addBlock(Blocks.ACACIA_PLANKS.getDefaultState(), .1f)
         },
         {
             BetterMineshaftStructure.Type.RED_DESERT,
-            new BlockSetSelector(Blocks.RED_SANDSTONE.getDefaultState())
-                .addBlock(Blocks.SMOOTH_RED_SANDSTONE.getDefaultState(), .15f)
-                .addBlock(Blocks.CUT_RED_SANDSTONE.getDefaultState(), .15f)
-                .addBlock(Blocks.CHISELED_RED_SANDSTONE.getDefaultState(), .1f)
+            new BlockSetSelector(Blocks.ACACIA_PLANKS.getDefaultState())
+                .addBlock(Blocks.SMOOTH_ACACIA_PLANKS.getDefaultState(), .15f)
+                .addBlock(Blocks.ACACIA_PLANKS.getDefaultState(), .15f)
+                .addBlock(Blocks.ACACIA_PLANKS.getDefaultState(), .1f)
         },
         {
             BetterMineshaftStructure.Type.SAVANNA,
-            BlockSetSelector.from(Blocks.STRIPPED_ACACIA_LOG.getDefaultState().with(PillarBlock.AXIS, Direction.Axis.Y))
+            BlockSetSelector.from(Blocks.ACACIA_PLANKS.getDefaultState().with(PillarBlock.AXIS, Direction.Axis.Y))
         },
         {
             BetterMineshaftStructure.Type.MUSHROOM,
-            BlockSetSelector.from(Blocks.MUSHROOM_STEM.getDefaultState())
-        }
+            BlockSetSelector.from(Blocks.OAK_PLANKS.getDefaultState()}
     }).collect(Collectors.toMap(data -> (BetterMineshaftStructure.Type) data[0], data -> (BlockSetSelector) data[1]));
 
     /**
@@ -333,15 +244,15 @@ public class BlockSetSelectors {
         },
         {
             BetterMineshaftStructure.Type.ICE,
-            Blocks.PACKED_ICE.getDefaultState()
+            Blocks.SPRUCE_PLANKS.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.DESERT,
-            Blocks.SANDSTONE.getDefaultState()
+            Blocks.ACACIA_PLANKS.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.RED_DESERT,
-            Blocks.RED_SANDSTONE.getDefaultState()
+            Blocks.ACACIA_PLANKS.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.SAVANNA,
@@ -349,7 +260,7 @@ public class BlockSetSelectors {
         },
         {
             BetterMineshaftStructure.Type.MUSHROOM,
-            Blocks.RED_MUSHROOM_BLOCK.getDefaultState()}
+            Blocks.OAK_PLANKS.getDefaultState()}
     }).collect(Collectors.toMap(data -> (BetterMineshaftStructure.Type) data[0], data -> (BlockState) data[1]));
 
     /**
@@ -374,15 +285,15 @@ public class BlockSetSelectors {
         },
         {
             BetterMineshaftStructure.Type.ICE,
-            Blocks.PACKED_ICE.getDefaultState()
+            Blocks.SPRUCE_FENCE.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.DESERT,
-            Blocks.SANDSTONE_WALL.getDefaultState()
+            Blocks.ACACIA_FENCE.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.RED_DESERT,
-            Blocks.RED_SANDSTONE_WALL.getDefaultState()
+            Blocks.ACACIA_FENCE.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.SAVANNA,
@@ -390,7 +301,7 @@ public class BlockSetSelectors {
         },
         {
             BetterMineshaftStructure.Type.MUSHROOM,
-            Blocks.MUSHROOM_STEM.getDefaultState()}
+            Blocks.OAK_FENCE.getDefaultState()}
     }).collect(Collectors.toMap(data -> (BetterMineshaftStructure.Type) data[0], data -> (BlockState) data[1]));
 
     /**
@@ -415,15 +326,15 @@ public class BlockSetSelectors {
         },
         {
             BetterMineshaftStructure.Type.ICE,
-            Blocks.PACKED_ICE.getDefaultState()
+            Blocks.SPRUCE_SLAB.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.DESERT,
-            Blocks.SANDSTONE_SLAB.getDefaultState()
+            Blocks.ACACIA_SLAB.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.RED_DESERT,
-            Blocks.RED_SANDSTONE_SLAB.getDefaultState()
+            Blocks.ACACIA_SLAB.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.SAVANNA,
@@ -431,7 +342,7 @@ public class BlockSetSelectors {
         },
         {
             BetterMineshaftStructure.Type.MUSHROOM,
-            Blocks.BROWN_MUSHROOM.getDefaultState()}
+            Blocks.OAK_SLAB.getDefaultState()}
     }).collect(Collectors.toMap(data -> (BetterMineshaftStructure.Type) data[0], data -> (BlockState) data[1]));
 
     /**
@@ -444,7 +355,7 @@ public class BlockSetSelectors {
         },
         {
             BetterMineshaftStructure.Type.MESA,
-            Blocks.GRAVEL.getDefaultState()
+            Blocks.RED_SAND.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.JUNGLE,
@@ -452,11 +363,11 @@ public class BlockSetSelectors {
         },
         {
             BetterMineshaftStructure.Type.SNOW,
-            Blocks.SNOW_BLOCK.getDefaultState()
+            Blocks.GRAVEL.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.ICE,
-            Blocks.SNOW_BLOCK.getDefaultState()
+            Blocks.GRAVEL.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.DESERT,
@@ -493,19 +404,19 @@ public class BlockSetSelectors {
         },
         {
             BetterMineshaftStructure.Type.SNOW,
-            Blocks.SNOW_BLOCK.getDefaultState()
+            Blocks.COBBLESTONE_WALL.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.ICE,
-            Blocks.PACKED_ICE.getDefaultState()
+            Blocks.COBBLESTONE_WALL.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.DESERT,
-            Blocks.SANDSTONE_WALL.getDefaultState()
+            Blocks.COBBLESTONE_WALL.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.RED_DESERT,
-            Blocks.RED_SANDSTONE_WALL.getDefaultState()
+            Blocks.COBBLESTONE_WALL.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.SAVANNA,
@@ -513,7 +424,7 @@ public class BlockSetSelectors {
         },
         {
             BetterMineshaftStructure.Type.MUSHROOM,
-            Blocks.BROWN_MUSHROOM_BLOCK.getDefaultState()}
+            Blocks.COBBLESTONE_WALL.getDefaultState()}
     }).collect(Collectors.toMap(data -> (BetterMineshaftStructure.Type) data[0], data -> (BlockState) data[1]));
 
     /**
@@ -522,38 +433,38 @@ public class BlockSetSelectors {
     public static Map<BetterMineshaftStructure.Type, BlockState> STONE_SLAB_BLOCK = Stream.of (new Object[][] {
         {
             BetterMineshaftStructure.Type.NORMAL,
-            Blocks.STONE_BRICK_SLAB.getDefaultState().with(Properties.SLAB_TYPE, SlabType.TOP)
+            Blocks.STONE_SLAB.getDefaultState().with(Properties.SLAB_TYPE, SlabType.TOP)
         },
         {
             BetterMineshaftStructure.Type.MESA,
-            Blocks.STONE_BRICK_SLAB.getDefaultState().with(Properties.SLAB_TYPE, SlabType.TOP)
+            Blocks.STONE_SLAB.getDefaultState().with(Properties.SLAB_TYPE, SlabType.TOP)
         },
         {
             BetterMineshaftStructure.Type.JUNGLE,
-            Blocks.STONE_BRICK_SLAB.getDefaultState().with(Properties.SLAB_TYPE, SlabType.TOP)
+                Blocks.STONE_SLAB.getDefaultState().with(Properties.SLAB_TYPE, SlabType.TOP)
         },
         {
             BetterMineshaftStructure.Type.SNOW,
-            Blocks.SNOW_BLOCK.getDefaultState()
+            Blocks.STONE_SLAB.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.ICE,
-            Blocks.PACKED_ICE.getDefaultState()
+            Blocks.STONE_SLAB.getDefaultState()
         },
         {
             BetterMineshaftStructure.Type.DESERT,
-            Blocks.SANDSTONE_SLAB.getDefaultState().with(Properties.SLAB_TYPE, SlabType.TOP)
+            Blocks.STONE_SLAB.getDefaultState().with(Properties.SLAB_TYPE, SlabType.TOP)
         },
         {
             BetterMineshaftStructure.Type.RED_DESERT,
-            Blocks.RED_SANDSTONE_SLAB.getDefaultState().with(Properties.SLAB_TYPE, SlabType.TOP)
+            Blocks.STONE_SLAB.getDefaultState().with(Properties.SLAB_TYPE, SlabType.TOP)
         },
         {
             BetterMineshaftStructure.Type.SAVANNA,
-            Blocks.STONE_BRICK_SLAB.getDefaultState().with(Properties.SLAB_TYPE, SlabType.TOP)
+            Blocks.STONE_SLAB.getDefaultState().with(Properties.SLAB_TYPE, SlabType.TOP)
         },
         {
             BetterMineshaftStructure.Type.MUSHROOM,
-            Blocks.BROWN_MUSHROOM_BLOCK.getDefaultState()}
+            Blocks.STONE_SLAB.getDefaultState()}
     }).collect(Collectors.toMap(data -> (BetterMineshaftStructure.Type) data[0], data -> (BlockState) data[1]));
 }
